@@ -19,6 +19,7 @@ public class TestLabApplication {
 	public static void main(String[] args) {
 		try {
 			MessageReader messageReader = MessageReaderSingleton.getInstance();
+			// a se schimba path-ul cu path-ul local :) multumesc
 			List<Message> messages = messageReader.readMessagesFromFile("D:\\dev\\test_lab\\test_lab\\src\\main\\java\\com\\example\\test_lab\\messages.json");
 
 			MessageDecoderContext decoderContext = new MessageDecoderContext();
